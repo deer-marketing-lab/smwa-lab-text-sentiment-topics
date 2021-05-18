@@ -59,13 +59,19 @@ To gain access to the data, run the following code to download it and save it in
 ```{r, cache= TRUE, message = FALSE}
 library(googledrive)
 
-data_id <- "1WJTEJ3zjDh8Bi7v1JqGIc62sN9LKPVAw"
-out_file <- "data/reviews.csv"
+data_id <- "16zwq8pGhvTV8IrhTNZUQvwCddyHqpbFO"
+out_file <- "data/lab_05.zip"
 
 drive_download(
   as_id(data_id), 
   path = out_file, 
   overwrite = TRUE)
+
+# --- Unzip and Clean up --- #
+unzip(out_file,
+      exdir = "data")
+
+file.remove(out_file)
 
 ```
 
