@@ -13,7 +13,6 @@ hotel_reviews <-
 # provide the output of these text cleaning steps to students
 tidy_reviews <- 
     hotel_reviews %>%
-    rownames_to_column("id") %>%
     unnest_tokens(word, text) %>%
     mutate(word = lemmatize_words(word))
 
