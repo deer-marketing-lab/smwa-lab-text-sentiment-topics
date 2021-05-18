@@ -1,6 +1,7 @@
 library(readr)
 library(dplyr)
 library(tibble)
+library(stringr)
 library(tidyr)
 library(tidytext)
 library(textstem)
