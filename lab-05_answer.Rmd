@@ -54,26 +54,7 @@ The data contains 1600 reviews:
 * 400 truthful, negative reviews from Expedia, Hotels.com, Orbitz, Priceline, TripAdvisor, and Yelp
 * 400 deceptive negative reviews from Mechanical Turk
 
-To gain access to the data, run the following code to download it and save it in the `data` directory:
-
-```{r, cache= TRUE, message = FALSE}
-library(googledrive)
-
-data_id <- "16zwq8pGhvTV8IrhTNZUQvwCddyHqpbFO"
-out_file <- "data/lab_05.zip"
-
-drive_download(
-  as_id(data_id), 
-  path = out_file, 
-  overwrite = TRUE)
-
-# --- Unzip and Clean up --- #
-unzip(out_file,
-      exdir = "data")
-
-file.remove(out_file)
-
-```
+The data are located in the data directory, `data/reviews.csv`
 
 You might need to use the following `R` libraries throughout this exercise:^[
     If you haven't installed one or more of these packages, do so by entering `install.packages("PKG_NAME")` into the R console and pressing ENTER.
