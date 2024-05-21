@@ -25,13 +25,13 @@ By the end of this tutorial you will be able to:
 ## Instructions to Students
 
 These tutorials are **not graded**, but we encourage you to invest time and effort into working through them from start to finish.
-Add your solutions to the `lab-05_answer.Rmd` file as you work through the exercises so that you have a record of the work you have done.
+Add your solutions to the `lab_answer.Rmd` file as you work through the exercises so that you have a record of the work you have done.
 
 Obtain a copy of both the question and answer files using Git.
 To clone a copy of this repository to your own PC, use the following command:
 
 ```{bash, eval = FALSE}
-$ git clone https://github.com/tisem-digital-marketing/smwa-lab-05.git
+$ git clone https://github.com/tisem-digital-marketing/smwa-lab-text-sentiment-topics.git
 ```
 
 Once you have your copy, open the answer document in RStudio as an RStudio project and work through the questions.
@@ -42,7 +42,7 @@ When you are uncertain or do not know what to do next - ask questions of your pe
 
 ## Getting Started: Data & R Packages
 
-This Lab revisits the data on hotel reviews from Lab 4. 
+This Lab revisits the data on hotel reviews. 
 As a reminder: The reviews are a collection of truthful and deceptive (i.e. fake) reviews of 20 hotels in the Chicago area, known in the computational linguistics community as the Deceptive Opinion Spam dataset.^[
 The data originally was published in the paper "Finding Deceptive Opinion Spam by Any Stretch of the Imagination" by M. Ott, Y. Choi, C. Cardie, and J.T. Hancock in 2011 in the Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies
 ]
